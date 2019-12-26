@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/static/js/main.3faef270.chunk.js",
+    "main.js.map": "/static/js/main.3faef270.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a3a005c2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a3a005c2.js.map",
+    "static/css/2.17e5ed98.chunk.css": "/static/css/2.17e5ed98.chunk.css",
+    "static/js/2.2bdce90e.chunk.js": "/static/js/2.2bdce90e.chunk.js",
+    "static/js/2.2bdce90e.chunk.js.map": "/static/js/2.2bdce90e.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.0fda5d87aa6aed1f95972034c8165ff1.js": "/precache-manifest.0fda5d87aa6aed1f95972034c8165ff1.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.17e5ed98.chunk.css.map": "/static/css/2.17e5ed98.chunk.css.map",
+    "static/js/2.2bdce90e.chunk.js.LICENSE": "/static/js/2.2bdce90e.chunk.js.LICENSE",
+    "static/media/arshi_circle.png": "/static/media/arshi_circle.d2e3a100.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a3a005c2.js",
+    "static/css/2.17e5ed98.chunk.css",
+    "static/js/2.2bdce90e.chunk.js",
+    "static/js/main.3faef270.chunk.js"
+  ]
+}
