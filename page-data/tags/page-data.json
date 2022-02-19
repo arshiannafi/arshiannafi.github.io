@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-tags-tsx",
+    "path": "/tags/",
+    "result": {"data":{"allMarkdownRemark":{"group":[{"fieldValue":"hello-world","totalCount":1}]}},"pageContext":{}},
+    "staticQueryHashes": []}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-list-posts-for-tag-tsx",
+    "path": "/tags/hello-world/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"slug":"/posts/hello-world","pageTitle":"Hello world","tags":["hello-world"]}}}]}},"pageContext":{"tag":"hello-world"}},
+    "staticQueryHashes": []}
