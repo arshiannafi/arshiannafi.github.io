@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[642],{6478:function(e,n,t){t.r(n),t.d(n,{center:function(){return s}});var s={name:"5vcqs4",styles:"padding:64px 0;text-align:center"}}}]);
-//# sourceMappingURL=component---src-pages-404-styles-ts-80d970e7a58067f1c711.js.map

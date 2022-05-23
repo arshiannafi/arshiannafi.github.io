@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-list-posts-for-tag-tsx",
+    "path": "/tags/sharpening-filter/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"slug":"/pages/uvic/ece-471/sharpening-filter","pageTitle":"ECE 471 - Sharpening Filter","tags":["ece-471","computer-vision","sharpening-filter","Python","OpenCV"]}}}]}},"pageContext":{"tag":"sharpening-filter"}},
+    "staticQueryHashes": []}

@@ -1,1 +1,0 @@
-{"version":3,"file":"component---src-pages-404-styles-ts-80d970e7a58067f1c711.js","mappings":"mJAEO,IAAMA,EAAM","sources":["webpack://website/./src/pages/404.styles.ts"],"sourcesContent":["import {css} from \"@emotion/react\";\n\nexport const center = css`\n    padding: 64px 0;\n    text-align: center;\n`;\n"],"names":["center"],"sourceRoot":""}

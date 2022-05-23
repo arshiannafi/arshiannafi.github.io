@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-recent-tsx",
+    "path": "/recent/",
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"slug":"/pages/uvic/ece-471/sharpening-filter","pageTitle":"ECE 471 - Sharpening Filter","last_modified":"2022-05-23"}}}]}},"pageContext":{}},
+    "staticQueryHashes": []}
