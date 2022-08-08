@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-list-posts-for-tag-tsx",
+    "path": "/tags/research/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"slug":"/pages/uvic/coop2/how-to-develop-research-questions","pageTitle":"How to Develop Research Questions [Highlights]","tags":["research","empirical-methods"]}}}]}},"pageContext":{"tag":"research"}},
+    "staticQueryHashes": []}
