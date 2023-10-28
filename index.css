@@ -46,6 +46,9 @@ figure {
     color: var(--primary)
 }
 
+.container {
+    padding: 0 8px;
+}
 
 /* # Footer ----------------------------------------------------------------- */
 
