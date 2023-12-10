@@ -8,7 +8,6 @@
 
 body {
     font-family: Verdana, Arial, sans-serif;
-    font-size: 1.15em;
     max-width: 720px;
     margin: auto;
 }
@@ -17,16 +16,28 @@ h1, h2, h3 {
     color: var(--primary);
 }
 
-p {
+p, li {
     line-height: 1.5em;
-}
-
-code {
-    font-size: 16px;
 }
 
 figure {
     margin: 0;
+}
+
+/* Code block */
+div.sourceCode {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    font-size: 1.15em;
+    padding: 8px 12px;
+}
+
+/* Inline code */
+code:not(.sourceCode) {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    font-size: 1.15em;
+    padding: 0 4px;
 }
 
 /* # Page and Components ---------------------------------------------------- */
@@ -50,12 +61,28 @@ figure {
     padding: 0 16px;
 }
 
+.center {
+    text-align: center;
+}
+
+.article-author {
+    display: inline-block;
+}
+
+.article-date {
+    display: inline-block;
+}
+
+.space-32 {
+    padding: 32px 0;
+}
+
 /* # Footer ----------------------------------------------------------------- */
 
 .footer-meta {
     color: var(--text-fade);
     font-style: italic;
-    padding: 32px 0 16px 0;
+    padding: 16px 0;
 }
 
 .footer {
