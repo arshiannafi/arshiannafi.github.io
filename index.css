@@ -24,6 +24,20 @@ figure {
     margin: 0;
 }
 
+/* # Pages ------------------------------------------------------------------ */
+
+.container {
+    padding: 0 16px;
+}
+
+.article-author {
+    display: inline-block;
+}
+
+.article-date {
+    display: inline-block;
+}
+
 /* Code block */
 div.sourceCode {
     background-color: #f0f0f0;
@@ -40,7 +54,27 @@ code:not(.sourceCode) {
     padding: 0 4px;
 }
 
-/* # Page and Components ---------------------------------------------------- */
+table.references td:nth-child(1) {
+    min-width: 50px;
+}
+
+table.references td:nth-child(2) > a {
+    word-break: break-all;
+}
+
+/* # Components ------------------------------------------------------------- */
+
+/* Utils */
+
+.center {
+    text-align: center;
+}
+
+.space-32 {
+    padding: 32px 0;
+}
+
+/* Nav */
 
 .nav {
     background-color: var(--primary);
@@ -57,27 +91,7 @@ code:not(.sourceCode) {
     color: var(--primary)
 }
 
-.container {
-    padding: 0 16px;
-}
-
-.center {
-    text-align: center;
-}
-
-.article-author {
-    display: inline-block;
-}
-
-.article-date {
-    display: inline-block;
-}
-
-.space-32 {
-    padding: 32px 0;
-}
-
-/* # Footer ----------------------------------------------------------------- */
+/* Footer */
 
 .footer-meta {
     color: var(--text-fade);
@@ -94,22 +108,4 @@ code:not(.sourceCode) {
 
 .footer a {
     color: var(--accent);
-}
-
-/* # Page Specific ---------------------------------------------------------- */
-
-.landing-banner {
-    text-align: center;
-}
-
-.landing-profile-picture {
-    width: 200px;
-}
-
-.project-row {
-    padding: 0 0 24px 0;
-}
-
-.project-row div:first-child {
-    font-weight: bold;
 }
