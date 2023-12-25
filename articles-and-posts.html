@@ -3,9 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="dcterms.date" content="2022-05-23" />
-  <meta name="keywords" content="ece-471, computer-vision, sharpening-filter, Python, OpenCV" />
-  <title>Sharpening Filter | Arshi</title>
+  <title>Articles and Posts | Arshi</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -35,27 +33,79 @@
 <div class="container">
 
 
-  <p class="article-date">
-    Last modified: 2022-05-23.
-  </p>
 
 
 
 
-  <h1 id="sharpening-filter">Sharpening Filter</h1>
-  <p>Sharpening filter is achieved by</p>
-  <p><br /><span class="math display"><em>F</em> + <em>α</em>(<em>F</em> − <em>F</em> * <em>H</em>)</span><br /></p>
-  <p>where <span class="math inline"><em>F</em></span> is the image and <span class="math inline"><em>H</em></span> is the Gaussian kernel. A blurred image is attained by convolving <span class="math inline"><em>F</em></span> and <span class="math inline"><em>H</em></span>.</p>
-  <p>I.e. Sharpening filter is achieved by blurring the image then subtracting the “blur” out of the original image.</p>
-  <p>The assignment is posted on <a href="https://github.com/arshiannafi/uvic/tree/main/ece-471-computer-vision/sharpening-filter">GitHub</a>.</p>
+  <style>
+      li {
+          padding: 8px 0;
+      }
+  </style>
+  <h1 id="articles-and-posts">Articles and Posts</h1>
+  <button onclick="showAll()">
+  All
+  </button>
+  <button onclick="showArticles()">
+  Articles
+  </button>
+  <button onclick="showPosts()">
+  Posts
+  </button>
+  <div class="space-8">
+
+  </div>
+  <ul>
+  <li class="post">
+  <a href="/posts/2017-10-29-when-constraints-spark-creativity/">When Constraints Spark Creativity</a>
+  </li>
+  <li class="article">
+  <a href="/articles/a-guide-to-develop-ui-for-rtl-languages/">A Guide to Design, Develop, and Test Right to Left (RTL) Components</a>
+  </li>
+  </ul>
+  <div class="space-32">
+
+  </div>
+  <div class="space-32">
+
+  </div>
+  <script>
+
+  const showAll = () => {
+      let entries = document.getElementsByClassName("article");
+      for (let entry of entries) {
+          entry.style.display = "";
+      }
+      entries = document.getElementsByClassName("post");
+      for (let entry of entries) {
+          entry.style.display = "";
+      }
+  }
+
+  const showArticles = () => {
+      showAll();
+      // Hide posts
+      const entries = document.getElementsByClassName("post");
+      for (let entry of entries) {
+          entry.style.display = "none";
+      }
+  }
+
+  const showPosts = () => {
+      showAll();
+      // Hide articles
+      const entries = document.getElementsByClassName("article");
+      for (let entry of entries) {
+          entry.style.display = "none";
+      }
+  }
+
+  </script>
   <div class="space-32"></div>
   
   
 
   <div class="footer-meta">
-    <p>
-      Keywords: ece-471, computer-vision, sharpening-filter, Python, OpenCV
-    </p>
   </div>
 
 </div>

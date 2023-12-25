@@ -77,14 +77,21 @@
     code span.vs { color: #4070a0; } /* VerbatimString */
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
+  <link rel="icon" type="image/x-icon" href="/favicon.png">
   <link rel="stylesheet" href="/index.css" />
 </head>
 
 <body>
 
-<div class="nav">
+<div class="topnav" id="topnav">
   <a href="/">Home</a>
   <a href="/projects">Projects</a>
+  <a href="/articles-and-posts">Articles and Posts</a>
+
+  <!-- Adapted from: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+  <a href="javascript:void(0);" class="icon" id="topnav-collapseToggleButton" onclick="toggleMobileMenuExpansion()">
+    [Menu]
+  </a>
 </div>
 
 
@@ -119,7 +126,6 @@
           margin: 8px 0;
       }
   </style>
-  <p><em>This article is adapted from documentation that was initially published internally for Jostle on Dec 17, 2021. It was later release for publication on Oct 24, 2023.</em></p>
   <h1 id="glossary">Glossary</h1>
   <table>
   <tr>
@@ -269,6 +275,7 @@
   <p>Fig 8. Forcing elements to render in RTL using HTML attribute</p>
   </div>
   <h1 id="references-and-bibliography">References and Bibliography</h1>
+  <p><em>This article is adapted from documentation that was initially published internally for Jostle on Dec 17, 2021. It was later release for publication on Oct 24, 2023.</em></p>
   <table class="references">
   <tr>
   <td class="ref-num">
@@ -331,5 +338,26 @@
     © 2013-2023 Arshi Annafi
   </p>
 </div>
+
+  <script>
+    // Adapted from: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+    const toggleMobileMenuExpansion = () => {
+      var topNavElement = document.getElementById("topnav");
+      if (topNavElement.className === "topnav") {
+        topNavElement.className += " responsive";
+      } else {
+        topNavElement.className = "topnav";
+      }
+
+      var collapseToggleButton = document.getElementById("topnav-collapseToggleButton");
+      if (collapseToggleButton.innerText === "[Menu]") {
+        collapseToggleButton.innerText = "[X]"
+      } else {
+        collapseToggleButton.innerText = "[Menu]"
+      }
+    }
+
+  </script>
+
 </body>
 </html>
