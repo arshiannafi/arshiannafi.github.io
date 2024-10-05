@@ -7,10 +7,19 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="icon" type="image/x-icon" href="/favicon.png">
   <link rel="stylesheet" href="/index.css" />
@@ -21,7 +30,7 @@
 <div class="topnav" id="topnav">
   <a href="/">Home</a>
   <a href="/projects">Projects</a>
-  <a href="/articles-and-posts">Articles and Posts</a>
+  <a href="/posts">Posts</a>
 
   <!-- Adapted from: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
   <a href="javascript:void(0);" class="icon" id="topnav-collapseToggleButton" onclick="toggleMobileMenuExpansion()">
@@ -50,16 +59,31 @@
   <p><img class="landing-profile-picture" src="https://avatars.githubusercontent.com/u/19654498" /></p>
   <h1 id="arshi-annafi">Arshi Annafi</h1>
   <h2 id="software-developer">Software Developer</h2>
-  <p><a href="https://github.com/arshiannafi/">GitHub</a> | <a href="https://www.linkedin.com/in/arshiannafi/">LinkedIn</a> | <a href="https://www.instagram.com/arshiannafi_/">Instagram</a></p>
+  <p><a href="https://github.com/arshiannafi/">GitHub</a> | <a
+  href="https://www.linkedin.com/in/arshiannafi/">LinkedIn</a> | <a
+  href="https://www.instagram.com/arshiannafi_/">Instagram</a></p>
   </div>
-  <p>Hi! I am Arshi; a passionate software developer from Calgary. I graduated from University of Victoria with a bachelor’s degree in Software Engineering in 2019. I am currently working at <a href="https://jostle.me/">Jostle</a> as a team lead and a developer.</p>
-  <p>My specialization in university was “Data Mining and Analysis, Artificial Intelligence, and Machine Learning”. And lately, I’ve been exploring many other topics that excite me as a developer.</p>
-  <p>For example, my fascination with the use of technology in right-to-left languages like Arabic and by visually impaired users has inspired me to actively learn and enhance my skills in designing and developing software that are inclusive and accessible.</p>
+  <p>Hi! I am Arshi; a passionate software developer from Calgary. I
+  graduated from University of Victoria with a bachelor’s degree in
+  Software Engineering in 2019. I am currently working at <a
+  href="https://jostle.me/">Jostle</a> as a team lead and a
+  developer.</p>
+  <p>My specialization in university was “Data Mining and Analysis,
+  Artificial Intelligence, and Machine Learning”. And lately, I’ve been
+  exploring many other topics that excite me as a developer.</p>
+  <p>For example, my fascination with the use of technology in
+  right-to-left languages like Arabic and by visually impaired users has
+  inspired me to actively learn and enhance my skills in designing and
+  developing software that are inclusive and accessible.</p>
   <!-- Dark Mode -->
-  <p>When I have some time to spare, I am working to publish more things on GitHub and add content on this website. So I invite you to explore my website, visit the <a href="/projects">Projects’ Page</a>, and feel free to reach out and connect. I’d love to hear from you!</p>
+  <p>When I have some time to spare, I am working to publish more things
+  on GitHub and add content on this website. So I invite you to explore
+  my website, visit the <a href="/projects">Projects’ Page</a>, and feel
+  free to reach out and connect. I’d love to hear from you!</p>
   <h1 id="recently-published">Recently Published</h1>
   <ul>
-  <li><a href="/articles/a-guide-to-develop-ui-for-rtl-languages/">A Guide to Design, Develop, and Test Right to Left (RTL) Components</a></li>
+  <li><a href="/posts/2021-12-17/">A Guide to Design, Develop, and Test
+  Right to Left (RTL) Components</a></li>
   </ul>
   <div class="space-32"></div>
   
@@ -80,7 +104,7 @@
   </p>
   <br>
   <p>
-    © 2013-2023 Arshi Annafi
+    © 2013-2024 Arshi Annafi
   </p>
 </div>
 

@@ -4,15 +4,25 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="dcterms.date" content="2022-05-23" />
-  <meta name="keywords" content="ece-471, computer-vision, sharpening-filter, Python, OpenCV" />
+  <meta name="keywords" content="ece-471, computer-vision,
+sharpening-filter, Python, OpenCV" />
   <title>Sharpening Filter | Arshi</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="icon" type="image/x-icon" href="/favicon.png">
   <link rel="stylesheet" href="/index.css" />
@@ -23,7 +33,7 @@
 <div class="topnav" id="topnav">
   <a href="/">Home</a>
   <a href="/projects">Projects</a>
-  <a href="/articles-and-posts">Articles and Posts</a>
+  <a href="/posts">Posts</a>
 
   <!-- Adapted from: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
   <a href="javascript:void(0);" class="icon" id="topnav-collapseToggleButton" onclick="toggleMobileMenuExpansion()">
@@ -44,17 +54,25 @@
 
   <h1 id="sharpening-filter">Sharpening Filter</h1>
   <p>Sharpening filter is achieved by</p>
-  <p><br /><span class="math display"><em>F</em> + <em>α</em>(<em>F</em> − <em>F</em> * <em>H</em>)</span><br /></p>
-  <p>where <span class="math inline"><em>F</em></span> is the image and <span class="math inline"><em>H</em></span> is the Gaussian kernel. A blurred image is attained by convolving <span class="math inline"><em>F</em></span> and <span class="math inline"><em>H</em></span>.</p>
-  <p>I.e. Sharpening filter is achieved by blurring the image then subtracting the “blur” out of the original image.</p>
-  <p>The assignment is posted on <a href="https://github.com/arshiannafi/uvic/tree/main/ece-471-computer-vision/sharpening-filter">GitHub</a>.</p>
+  <p><span
+  class="math display"><em>F</em> + <em>α</em>(<em>F</em> − <em>F</em> * <em>H</em>)</span></p>
+  <p>where <span class="math inline"><em>F</em></span> is the image and
+  <span class="math inline"><em>H</em></span> is the Gaussian kernel. A
+  blurred image is attained by convolving <span
+  class="math inline"><em>F</em></span> and <span
+  class="math inline"><em>H</em></span>.</p>
+  <p>I.e. Sharpening filter is achieved by blurring the image then
+  subtracting the “blur” out of the original image.</p>
+  <p>The assignment is posted on <a
+  href="https://github.com/arshiannafi/uvic/tree/main/ece-471-computer-vision/sharpening-filter">GitHub</a>.</p>
   <div class="space-32"></div>
   
   
 
   <div class="footer-meta">
     <p>
-      Keywords: ece-471, computer-vision, sharpening-filter, Python, OpenCV
+      Keywords: ece-471, computer-vision, sharpening-filter, Python,
+OpenCV
     </p>
   </div>
 
@@ -70,7 +88,7 @@
   </p>
   <br>
   <p>
-    © 2013-2023 Arshi Annafi
+    © 2013-2024 Arshi Annafi
   </p>
 </div>
 
