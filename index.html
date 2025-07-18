@@ -23,6 +23,7 @@
   </style>
   <link rel="icon" type="image/x-icon" href="/favicon.png">
   <link rel="stylesheet" href="/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -54,6 +55,30 @@
       .landing-profile-picture {
           width: 200px;
       }
+
+      .card-group {
+          display: flex;
+          flex-wrap: wrap;
+      }
+
+      .card {
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+          margin: 8px;
+          min-width: 180px;
+          padding: 16px;
+          height: 300px;
+          width: 180px;
+      }
+
+      .card p {
+          margin: 0;
+      }
+
+      .card img {
+          height: 180px;
+          object-fit: cover;
+          weight: 180px;
+      }
   </style>
   <div class="landing-banner">
   <p><img class="landing-profile-picture" src="https://avatars.githubusercontent.com/u/19654498" /></p>
@@ -66,8 +91,7 @@
   <p>Hi! I am Arshi; a passionate software developer from Calgary. I
   graduated from University of Victoria with a bachelor’s degree in
   Software Engineering in 2019. I am currently working at <a
-  href="https://jostle.me/">Jostle</a> as a team lead and a
-  developer.</p>
+  href="https://jostle.me/">Jostle</a> as a developer.</p>
   <p>My specialization in university was “Data Mining and Analysis,
   Artificial Intelligence, and Machine Learning”. And lately, I’ve been
   exploring many other topics that excite me as a developer.</p>
@@ -80,11 +104,26 @@
   on GitHub and add content on this website. So I invite you to explore
   my website, visit the <a href="/projects">Projects’ Page</a>, and feel
   free to reach out and connect. I’d love to hear from you!</p>
-  <h1 id="recently-published">Recently Published</h1>
-  <ul>
-  <li><a href="/posts/2021-12-17/">A Guide to Design, Develop, and Test
-  Right to Left (RTL) Components</a></li>
-  </ul>
+  <h1 id="featured">Featured</h1>
+  <div class="card-group">
+  <div class="card">
+  <p><img
+  src="/posts/2021-12-17-a-guide-to-develop-ui-for-rtl-languages/design-entity-face-rtl.png" /></p>
+  <p><a
+  href="/posts/2021-12-17-a-guide-to-develop-ui-for-rtl-languages/">A
+  Guide to Design, Develop, and Test Right to Left (RTL)
+  Components</a></p>
+  </div>
+  </div>
+  <h1 id="posts">Posts</h1>
+  <div class="card-group">
+  <div class="card">
+  <p><img
+  src="/posts/2017-10-29-when-constraints-spark-creativity/arshi-cloud.jpg" />
+  <a href="/posts/2017-10-29-when-constraints-spark-creativity">When
+  Constraints Spark Creativity</a></p>
+  </div>
+  </div>
   <div class="space-32"></div>
   
   
@@ -104,7 +143,7 @@
   </p>
   <br>
   <p>
-    © 2013-2024 Arshi Annafi
+    © 2013-2025 Arshi Annafi
   </p>
 </div>
 
